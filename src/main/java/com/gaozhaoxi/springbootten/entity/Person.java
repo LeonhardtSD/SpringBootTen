@@ -27,6 +27,13 @@ public class Person {
         this.address=address;
     }
 
+//    public Person(String name, Integer age,String address){
+//        //this.id=id;
+//        this.name=name;
+//        this.age=age;
+//        this.address=address;
+//    }
+
     public Long getId() {
         return id;
     }

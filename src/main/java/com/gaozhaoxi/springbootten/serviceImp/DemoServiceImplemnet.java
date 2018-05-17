@@ -29,8 +29,7 @@ public class DemoServiceImplemnet implements DemoService {
     }
 
     @Override
-   // @Transactional(noRollbackFor = {IllegalArgumentException.class})
-    @javax.transaction.Transactional(dontRollbackOn = {IllegalArgumentException.class})
+   @Transactional(noRollbackFor = {IllegalArgumentException.class})
     public Person savePersonWithoutRollBack(Person person) {
         Person p=personRepository.save(person);
         if(person.getName().equals("gaozhaoxi")){
